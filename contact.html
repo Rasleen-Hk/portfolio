@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Me | Rasleen Haj Khalifa</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-mesh">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  
+  <header class="glass-nav sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Brand Logo -->
+        <a href="index.html" class="flex items-center gap-3 group">
+          <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-sky-500 via-indigo-500 to-emerald-400 flex items-center justify-center text-white font-extrabold text-lg shadow-lg group-hover:rotate-6 transition-transform">
+            RK
+          </div>
+          <div>
+            <span class="brand-font font-bold text-lg tracking-tight block leading-none">Rasleen<span class="text-sky-500">.dev</span></span>
+            <span class="text-xs text-slate-500 dark:text-slate-400 font-medium">CS Student &amp; Web Developer</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation (Separate Pages) -->
+        <nav class="hidden md:flex items-center gap-2">
+          <a href="index.html" class="nav-link "><i class="fa-solid fa-house text-xs"></i><span>Home</span></a>
+<a href="about.html" class="nav-link "><i class="fa-solid fa-user-astronaut text-xs"></i><span>About Me</span></a>
+<a href="skills.html" class="nav-link "><i class="fa-solid fa-code text-xs"></i><span>Skills & Roles</span></a>
+<a href="projects.html" class="nav-link "><i class="fa-solid fa-laptop-code text-xs"></i><span>Projects</span></a>
+<a href="contact.html" class="nav-link active"><i class="fa-solid fa-paper-plane text-xs"></i><span>Contact Me</span></a>
+
+        </nav>
+
+        <!-- Right Controls: Dark Mode + Mobile Toggle -->
+        <div class="flex items-center gap-3">
+          <button id="theme-toggle" aria-label="Toggle Dark Mode"
+            class="w-11 h-11 rounded-2xl border border-slate-200/70 dark:border-slate-700/70 bg-white/70 dark:bg-slate-800/70 flex items-center justify-center text-slate-700 dark:text-amber-300 hover:scale-105 active:scale-95 transition-all shadow-sm cursor-pointer">
+            <i id="sun-icon" class="fa-solid fa-sun text-lg hidden"></i>
+            <i id="moon-icon" class="fa-solid fa-moon text-lg text-indigo-600"></i>
+          </button>
+
+          <button id="mobile-menu-btn" aria-label="Open Navigation Menu"
+            class="md:hidden w-11 h-11 rounded-2xl border border-slate-200/70 dark:border-slate-700/70 bg-white/70 dark:bg-slate-800/70 flex items-center justify-center">
+            <i class="fa-solid fa-bars text-lg"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <div id="mobile-menu" class="hidden md:hidden pb-4 flex flex-col gap-2 border-t border-slate-200/50 dark:border-slate-700/50 pt-3">
+        <a href="index.html" class="nav-link w-full justify-start "><i class="fa-solid fa-house w-5"></i><span>Home</span></a>
+<a href="about.html" class="nav-link w-full justify-start "><i class="fa-solid fa-user-astronaut w-5"></i><span>About Me</span></a>
+<a href="skills.html" class="nav-link w-full justify-start "><i class="fa-solid fa-code w-5"></i><span>Skills & Roles</span></a>
+<a href="projects.html" class="nav-link w-full justify-start "><i class="fa-solid fa-laptop-code w-5"></i><span>Projects</span></a>
+<a href="contact.html" class="nav-link w-full justify-start active"><i class="fa-solid fa-paper-plane w-5"></i><span>Contact Me</span></a>
+
+      </div>
+    </div>
+  </header>
+
+
+  <main class="flex-grow page-transition">
+    
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+  <div class="text-center max-w-3xl mx-auto mb-14 reveal-item">
+    <span class="px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest bg-sky-500/10 text-sky-600 dark:text-sky-400 border border-sky-500/20">
+      Let's Collaborate
+    </span>
+    <h1 class="text-3xl sm:text-5xl font-extrabold mt-4">Get In <span class="text-gradient">Touch</span></h1>
+    <p class="text-slate-600 dark:text-slate-300 mt-4 text-base sm:text-lg">
+      Have a freelance web project, collaboration idea, or just want to connect? Reach out directly through my social channels or send a message below.
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+    <!-- Left Column: Social Cards (Facebook, GitHub, Instagram, WhatsApp) -->
+    <div class="lg:col-span-6 space-y-5 reveal-item" style="animation-delay: 0.1s;">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <!-- GitHub -->
+        <a id="social-github" href="https://github.com" target="_blank" rel="noopener noreferrer"
+          class="glass-card p-6 flex items-center gap-4 group">
+          <div class="w-13 h-13 rounded-2xl bg-slate-900 text-white flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
+            <i class="fa-brands fa-github"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-base">GitHub</h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400">Explore my repositories</p>
+          </div>
+        </a>
+
+        <!-- Facebook -->
+        <a id="social-facebook" href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+          class="glass-card p-6 flex items-center gap-4 group">
+          <div class="w-13 h-13 rounded-2xl bg-blue-600 text-white flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-base">Facebook</h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400">Connect on Facebook</p>
+          </div>
+        </a>
+
+        <!-- Instagram -->
+        <a id="social-instagram" href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+          class="glass-card p-6 flex items-center gap-4 group">
+          <div class="w-13 h-13 rounded-2xl bg-gradient-to-tr from-amber-500 via-pink-500 to-purple-600 text-white flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-base">Instagram</h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400">Follow my creative life</p>
+          </div>
+        </a>
+
+        <!-- WhatsApp -->
+        <a id="social-whatsapp" href="https://wa.me/" target="_blank" rel="noopener noreferrer"
+          class="glass-card p-6 flex items-center gap-4 group">
+          <div class="w-13 h-13 rounded-2xl bg-emerald-500 text-white flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-base">WhatsApp</h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400">Direct instant chat</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Configure Your Social Links Box -->
+      <div class="glass-card p-6">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="font-bold text-base flex items-center gap-2">
+            <i class="fa-solid fa-sliders text-sky-500"></i>
+            <span>Link Your Social Profiles</span>
+          </h3>
+          <span id="social-save-msg" class="hidden text-xs font-bold text-emerald-500 bg-emerald-500/10 px-3 py-1 rounded-full">
+            <i class="fa-solid fa-check mr-1"></i> Saved!
+          </span>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <input id="input-github" type="url" placeholder="GitHub Profile URL"
+            class="px-3.5 py-2.5 rounded-xl bg-white/60 dark:bg-slate-900/60 border border-slate-300/70 dark:border-slate-700 text-xs focus:outline-none focus:border-sky-500" />
+          <input id="input-facebook" type="url" placeholder="Facebook Profile URL"
+            class="px-3.5 py-2.5 rounded-xl bg-white/60 dark:bg-slate-900/60 border border-slate-300/70 dark:border-slate-700 text-xs focus:outline-none focus:border-sky-500" />
+          <input id="input-instagram" type="url" placeholder="Instagram Profile URL"
+            class="px-3.5 py-2.5 rounded-xl bg-white/60 dark:bg-slate-900/60 border border-slate-300/70 dark:border-slate-700 text-xs focus:outline-none focus:border-sky-500" />
+          <input id="input-whatsapp" type="url" placeholder="WhatsApp Link (https://wa.me/216...)"
+            class="px-3.5 py-2.5 rounded-xl bg-white/60 dark:bg-slate-900/60 border border-slate-300/70 dark:border-slate-700 text-xs focus:outline-none focus:border-sky-500" />
+        </div>
+
+        <button onclick="saveCustomLinks({'social-github':'input-github','social-facebook':'input-facebook','social-instagram':'input-instagram','social-whatsapp':'input-whatsapp'}, 'social-save-msg')"
+          class="mt-4 w-full py-2.5 rounded-xl bg-gradient-to-r from-sky-500 to-indigo-600 text-white text-xs font-bold hover:opacity-95 transition-opacity cursor-pointer">
+          Save Social Account Links
+        </button>
+      </div>
+    </div>
+
+    <!-- Right Column: Interactive Message Form -->
+    <div class="lg:col-span-6 glass-card p-8 reveal-item" style="animation-delay: 0.22s;">
+      <h2 class="text-2xl font-bold mb-2">Send a Direct Message</h2>
+      <p class="text-sm text-slate-500 dark:text-slate-400 mb-6">Based in Mahdia, Tunisia • Open to remote freelance opportunities.</p>
+
+      <form onsubmit="event.preventDefault(); document.getElementById('form-feedback').classList.remove('hidden'); this.reset();" class="space-y-4">
+        <div>
+          <label class="block text-xs font-bold uppercase tracking-wider mb-1.5">Your Name</label>
+          <input type="text" required placeholder="John Doe"
+            class="w-full px-4 py-3 rounded-xl bg-white/60 dark:bg-slate-900/60 border border-slate-300/70 dark:border-slate-700 text-sm focus:outline-none focus:border-sky-500" />
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold uppercase tracking-wider mb-1.5">Your Email</label>
+          <input type="email" required placeholder="john@example.com"
+            class="w-full px-4 py-3 rounded-xl bg-white/60 dark:bg-slate-900/60 border border-slate-300/70 dark:border-slate-700 text-sm focus:outline-none focus:border-sky-500" />
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold uppercase tracking-wider mb-1.5">Message</label>
+          <textarea rows="4" required placeholder="Tell me about your website or video editing project..."
+            class="w-full px-4 py-3 rounded-xl bg-white/60 dark:bg-slate-900/60 border border-slate-300/70 dark:border-slate-700 text-sm focus:outline-none focus:border-sky-500"></textarea>
+        </div>
+
+        <button type="submit"
+          class="w-full py-3.5 rounded-2xl bg-gradient-to-r from-sky-500 via-indigo-500 to-emerald-500 text-white font-bold shadow-lg shadow-sky-500/25 hover:opacity-95 transition-all cursor-pointer flex items-center justify-center gap-2">
+          <i class="fa-solid fa-paper-plane"></i>
+          <span>Send Message to Rasleen</span>
+        </button>
+
+        <div id="form-feedback" class="hidden p-4 rounded-xl bg-emerald-500/15 border border-emerald-500/30 text-emerald-600 dark:text-emerald-400 text-sm font-semibold text-center">
+          <i class="fa-solid fa-circle-check mr-1.5"></i> Thank you! Your message has been prepared for Rasleen Haj Khalifa.
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  
+  <footer class="mt-auto border-t border-slate-200/60 dark:border-slate-800/80 py-8 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-500 dark:text-slate-400">
+      <p>&copy; 2026 <strong class="text-slate-800 dark:text-slate-200">Rasleen Haj Khalifa</strong>. Crafted with passion in Mahdia, Tunisia.</p>
+      <div class="flex items-center gap-5">
+        <a href="index.html" class="hover:text-sky-500 transition-colors">Home</a>
+        <a href="about.html" class="hover:text-sky-500 transition-colors">About</a>
+        <a href="skills.html" class="hover:text-sky-500 transition-colors">Skills</a>
+        <a href="projects.html" class="hover:text-sky-500 transition-colors">Projects</a>
+        <a href="contact.html" class="hover:text-sky-500 transition-colors">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
